@@ -1,39 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AsyncAPI Documentation</title>
-    <!-- AsyncAPI Web Components -->
-    <script src="https://unpkg.com/@asyncapi/web-component@latest/dist/@asyncapi/web-component.min.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f5f5f5;
-        }
-        asyncapi-document {
-            width: 90%;
-            height: 90vh;
-            background: white;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-            border-radius: 8px;
-            overflow: hidden;
-        }
-    </style>
+    <meta charset="UTF-8" />
+    <title>AsyncAPI Docs</title>
+    <!-- Pin the version to one that exists, e.g., 2.5.0, and note the correct file name: asyncapi-web-component.min.js -->
+    <script src="https://unpkg.com/@asyncapi/web-component@2.5.0/dist/asyncapi-web-component.min.js"></script>
 </head>
-<body>
+<body style="margin: 0; padding: 0;">
 <asyncapi-document
         src="asyncapi.yml"
         theme="dark"
         layout="two-column"
-        show-summary="true">
-</asyncapi-document>
+        show-summary="true"
+        style="width: 100vw; height: 100vh;"
+></asyncapi-document>
 </body>
 </html>
